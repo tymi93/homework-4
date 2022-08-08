@@ -1,0 +1,468 @@
+h1,
+h2,
+h3,
+h4,
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.list{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* =============== COMPONENTS =============== */
+
+.body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 14px;
+    color: #212121;
+    margin: 0;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    margin-right: 93px;
+}
+
+.logo-color {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.section-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.name-contact-people {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.work-contact-people {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* =============== /COMPONENTS =============== */
+
+/* =============== HEADER =============== */
+
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.menu-link {
+    padding: 32px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    display: block;
+}
+
+.current {
+    color: #2196F3;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: #2196F3;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ct-list {
+    display: flex;
+    margin-left: 50px;
+}
+
+.ct-list:first-child {
+    margin-left: 0;
+}
+
+.contact {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    font-style: normal;
+}
+
+.contact:hover,
+.contact:focus {
+    color: #2196F3;
+}
+
+/* =============== /HEADER =============== */
+
+/* =============== HERO =============== */
+
+.hero {
+    text-align: center;
+    padding: 200px 0;
+    background-image: url(../image/Hero.jpg);
+}
+
+.hero-side {
+    padding-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.modal-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.section-index {
+    padding: 94px 0;
+}
+
+.sub-title-list {
+    display: flex;
+}
+
+.title-sub-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.sub-title {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.section-description {
+    width: 270px;
+}
+
+/* =============== /HERO =============== */
+
+/* =============== ACTIVITY =============== */
+
+.activity-section {
+    padding-bottom: 94px;
+}
+
+.activity-title {
+    margin-bottom: 50px;
+}
+
+.activity-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* =============== /ACTIVITY =============== */
+
+/* =============== EMPLOES =============== */
+
+.employees-section {
+    background-color: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.employees-title {
+    margin-bottom: 50px;
+}
+
+.employees-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.employees-card {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.name-contact-people {
+    margin-bottom: 10px;
+}
+
+.index-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* =============== /EMPLOES =============== */
+
+/* =============== FUTER =============== */
+
+.contact-futer-list {
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.logo-futer {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.futer-contact {
+    padding-top: 20px;
+}
+
+.logo-futer-color {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.contact-map{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding-top: 20px;
+}
+
+.contact-futer{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
+.contact-futer:hover,
+.contact-futer:focus,
+.contact-map:hover,
+.contact-map:focus{
+    color: #2196F3;
+}
+
+/* =============== /FUTER =============== */
+
+/* =============== PORTFOLIO =============== */
+
+.section {
+    padding: 94px 0;
+}
+
+.work-type-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+
+.buton-list:not(:last-child) {
+    margin-right: 8px;
+}
+
+.btn-list{
+    border: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    color: #212121;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.btn-list:hover,
+.btn-list:focus{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #2196F3;
+}
+
+.completed-works {
+    padding-top: 34px;
+    padding-bottom: 94px;
+}
+
+.works-list {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 0;
+}
+
+.work-card {
+    width: 31%;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+
+.work-photo {
+    width: 100%;
+}
+
+.portfolio-padding {
+    width: 100%;
+    padding: 20px 24px;
+}
+
+.portfolio-title{
+    margin-bottom: 4px;
+    width: 322px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.portfolio-section{
+    width: 322px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* =============== /PORTFOLIO =============== */

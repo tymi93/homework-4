@@ -193,6 +193,7 @@ button {
 
 .contact-image{
     padding-right: 10px;
+    fill: #AFB1B8;
 }
 
 /* =============== /HEADER =============== */
@@ -233,6 +234,7 @@ button {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border-color: transparent;
 }
 
 .section-index {
@@ -415,10 +417,24 @@ button {
     display: flex;
 }
 
+.footer-flex {
+    align-items: baseline;
+}
+
 .futer-link {
     display: flex;
-    padding-left: 70px;
     gap: 10px;
+}
+
+.footer-txt {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .futer-list-item-link {

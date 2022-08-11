@@ -428,7 +428,7 @@ button {
 }
 
 .footer-txt {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -490,7 +490,7 @@ button {
 }
 
 .contact-map{
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

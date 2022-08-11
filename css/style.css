@@ -593,26 +593,6 @@ button {
     width: 100%;
 }
 
-.overlay {
-    transition: transform 500ms linear;
-    transform: translate(0, 100%);
-    overflow: auto;
-    position: absolute;
-    left: 0;
-    top: 0;
-    max-width: 100%;
-    max-height: 100%;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    padding: 63px 24px;
-    background: rgba(33, 150, 243, 0.9);
-}
-
 .portfolio-card-link-wraper:hover .overlay,
 .portfolio-card-link-wraper:focus .overlay {
     transform: translate(0, 0);

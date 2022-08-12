@@ -150,6 +150,7 @@ button {
     letter-spacing: 0.02em;
     color: #212121;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -179,6 +180,7 @@ button {
     letter-spacing: 0.02em;
     color: #757575;
     font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact:hover,
@@ -194,6 +196,7 @@ button {
 .contact-image{
     padding-right: 10px;
     fill: #AFB1B8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* =============== /HEADER =============== */
@@ -255,12 +258,14 @@ button {
     height: 120px;
     border-radius: 4px;
     margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .title-list-symbol {
     width: 70px;
     height: 70px;
-    padding: 25px 100px;
 }
 
 .sub-title {
@@ -294,6 +299,27 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.activite-txt {
+    position: relative;
+    bottom: 70px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
 }
 
 /* =============== /ACTIVITY =============== */
@@ -347,12 +373,15 @@ button {
     height: 44px;
     border-radius: 50%;
     background-color: #fff;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-sprite {
     fill: #AFB1B8;;
     width: 20px;
     height: 20px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-item-link:hover,
@@ -394,12 +423,8 @@ button {
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-}
-
-
-
-.permanent-list-image {
-    padding: 16px 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .permanent-list-item-link:focus,
@@ -414,10 +439,11 @@ button {
 /* =============== FUTER =============== */
 
 .futer-list {
-    display: flex;
+    padding-left: 70px;
 }
 
 .footer-flex {
+    display: flex;
     align-items: baseline;
 }
 
@@ -427,7 +453,7 @@ button {
 }
 
 .footer-txt {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -435,6 +461,7 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    padding-bottom: 20px;
 }
 
 .futer-list-item-link {
@@ -445,10 +472,11 @@ button {
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .futer-list-sprite {
-    fill: #FFFFFF;;
+    fill: #FFFFFF;
     width: 20px;
     height: 20px;
 }
@@ -487,8 +515,8 @@ button {
     color: #FFFFFF;
 }
 
-.contact-map{
-    font-family: 'Roboto';
+.contact-map {
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -496,9 +524,10 @@ button {
     letter-spacing: 0.03em;
     color: #FFFFFF;
     padding-top: 20px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-futer{
+.contact-futer {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -506,16 +535,58 @@ button {
     line-height: 1.71;
     letter-spacing: 0.02em;
     color: #757575;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-futer:hover,
 .contact-futer:focus,
 .contact-map:hover,
-.contact-map:focus{
+.contact-map:focus {
     color: #2196F3;
 }
 
 /* =============== /FUTER =============== */
+
+/* =============== MODAL WINDOW =============== */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+/* =============== /MODAL WINDOW =============== */
 
 /* =============== PORTFOLIO =============== */
 
@@ -551,6 +622,8 @@ button {
     color: #212121;
     background: #F5F4FA;
     border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-list:hover,
@@ -593,6 +666,13 @@ button {
     width: 100%;
 }
 
+.work-card:focus,
+.work-card:hover {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .overlay {
     transition: transform 500ms linear;
     transform: translate(0, 100%);
@@ -602,7 +682,7 @@ button {
     top: 0;
     max-width: 100%;
     max-height: 100%;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
